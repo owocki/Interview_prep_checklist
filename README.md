@@ -543,3 +543,7 @@ Often on these questions, interviewers are looking for three things (be succinct
 1. Look @ Recent press & fundraise announcements.
 1. Who are the founders? What are their backgrounds?
 2. Research interviewer
+
+<!-- Google Analytics --> 
+<img src='https://ga-beacon.appspot.com/UA-1014419-15/owocki/interview_prep_checklist' style='width:1px; height:1px;' >
+
