@@ -1,6 +1,6 @@
 # About
 
-This document was used by [Kevin Owocki](http://owocki.com) in his Summer 2013 Job Hunt to prep for technical interviews.  Enjoy, and feel free to edit!
+This document was used by [Kevin Owocki](http://owocki.com) in his Summer 2013 Job Hunt to prep for technical interviews.  Enjoy, and feel free to edit!   If you have any questions, my contact information is on [owocki.com](http://owocki.com/contact)
 
 ## Table of Contents
 
