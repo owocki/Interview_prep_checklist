@@ -28,14 +28,31 @@ This document was used by [Kevin Owocki](http://owocki.com) in his Summer 2013 J
 ```
 Roughly,
 
-The browser resolves the URI* to an IP address.  (This will do a usual lookup - cache, hostfile then server.)
-The browser sends a GET request to that IP.
-The server finds the correct file.
-The server processes the file.
-The file is sent to you.
-The server typically responds with a text stream and your browser displays it.
+The hardware sends an interupt to the web browser application for each key pressed.
+
+The browser resolves the hostname (unless its an IP already) to an IP address. 
+ - DNS Lookup, but may also be cached.
+The browser sends a GET request to that IP via HTTP protocol.
+ - This involves some parsing of the URL (assuming it's even HTTP and not a search query)
+ - Under the surface, this is TCP.
+ - Socket Stream
+ - TLS handshake
+The server finds the correct file via URI* requested.
+ - Usually an apache server, sometimes not. Ngnix, etc.
+ - Bridge between web server and application environemnt.  Apache/PHP, Ngnix/Unicorn/Rails.
+ - If there's a dynamic environment on server, manipulation of data structures will occur, maybe even some reads from files, redis, or a ACID database.
+The server returns the HTML (we hope it's HTML, it could be one of serveral content-types, but assume HTML for now).
+The file is sent to you, again through HTTP.
+Your browser displays it.
+ - Probably some more memory is allocated at this point.  The previous page may also be destroyed, but a referene to it will be placed in history.
+ - DOM parsing
+ - CSS interpretation
+ - page rendering, this can go down to the GPU
 Browser fetches asset files (CSS/JS/Images).
-*Uniform Resource Identifier
+ - Repeat steps 2 - 6.
+ 
+ 
+*URI - Uniform Resource Identifier
 ```
 
 [See also, this attempt to answer this question as broadly as possible!](https://github.com/alex/what-happens-when)
