@@ -38,6 +38,8 @@ Browser fetches asset files (CSS/JS/Images).
 *Uniform Resource Identifier
 ```
 
+[See also, this attempt to answer this question as broadly as possible!](https://github.com/alex/what-happens-when)
+
 *Q*: What is the w3c?
 
 ```
