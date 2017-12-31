@@ -124,8 +124,8 @@ A method and properties that outlive the scope of their original function
 
 *Q*: What is the maximum value of a 32bit integer?
 
-Signed? 2^32= 4.2 billion
-Unsigned? 2^(32-1)= 2.1 billion
+Unsigned? 2^32= 4.2 billion  
+Signed? 2^(32-1)= 2.1 billion  
 
 *Q*: How many bytes are in a 32bit integer?
 
